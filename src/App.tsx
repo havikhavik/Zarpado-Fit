@@ -5,8 +5,10 @@ import { Register } from "./pages/Register";
 import { UploadPhoto } from "./pages/UploadPhoto";
 import { VirtualTryOn } from "./pages/VirtualTryOn";
 import { Profile } from "./pages/Profile";
+import Ajustes from "./pages/Settings";
+import Faq from "./pages/Faq";
+import Catalog from "./pages/Catalog";
 import { Routes, Route } from "react-router-dom";
-import Ajustes from "./pages/Ajustes";
 
 export const App = () => {
   return (
@@ -20,6 +22,8 @@ export const App = () => {
         <Route path="/virtual-try-on" element={<VirtualTryOn />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/ajustes" element={<Ajustes />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/catalog" element={<Catalog />} />
       </Routes>
     </div>
   );
