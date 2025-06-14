@@ -6,6 +6,7 @@ import { UploadPhoto } from "./pages/UploadPhoto";
 import { VirtualTryOn } from "./pages/VirtualTryOn";
 import { Profile } from "./pages/Profile";
 import { Routes, Route } from "react-router-dom";
+import Ajustes from "./pages/Ajustes";
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <Route path="/upload-photo" element={<UploadPhoto />} />
         <Route path="/virtual-try-on" element={<VirtualTryOn />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/ajustes" element={<Ajustes />} />
       </Routes>
     </div>
   );
