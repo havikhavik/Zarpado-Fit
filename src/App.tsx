@@ -5,6 +5,7 @@ import { Register } from "./pages/Register";
 import { UploadPhoto } from "./pages/UploadPhoto";
 import { VirtualTryOn } from "./pages/VirtualTryOn";
 import { Profile } from "./pages/Profile";
+import { Catalog } from "./pages/Catalog";
 import { Routes, Route } from "react-router-dom";
 
 export const App = () => {
@@ -18,6 +19,7 @@ export const App = () => {
         <Route path="/upload-photo" element={<UploadPhoto />} />
         <Route path="/virtual-try-on" element={<VirtualTryOn />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/catalog" element={<Catalog />} />
       </Routes>
     </div>
   );
