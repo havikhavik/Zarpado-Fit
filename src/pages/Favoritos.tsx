@@ -31,8 +31,7 @@ export const Favoritos = () => {
               // Esto hace que toda el área de la carta sea clickeable.
               <div 
                 key={item.id} // La 'key' siempre va en el elemento más externo del map.
-                className="cursor-pointer group" 
-                onClick={() => navigate(`/prenda/${item.id}`)}
+                className="cursor-pointer group"
               >
                 <Carta 
                   id={item.id} 

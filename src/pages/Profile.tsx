@@ -1,4 +1,4 @@
-import { User, History, Star, Image, LogOut, MessageCircleQuestion } from "lucide-react";
+import { User, History, Image, LogOut, MessageCircleQuestion, Heart } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import MiniCarta from "../components/MiniCard"
 
@@ -62,7 +62,7 @@ export const Profile = () => {
               <NavLink to="/favoritos">
                 <div className="bg-gray-800/50 p-4 rounded-lg hover:bg-gray-700 transition">
                   <h3 className="text-xl font-semibold text-white mb-4 flex items-center space-x-2 select-none">
-                    <Star className="h-5 w-5" />
+                    <Heart className="h-5 w-5" />
                     <span>Favoritos</span>
                   </h3>
                 </div>
@@ -95,7 +95,6 @@ export const Profile = () => {
                 </div>
               </NavLink>
             </div>
-
           </div>
         </div>
 
@@ -104,7 +103,7 @@ export const Profile = () => {
 
 
 
-      </div>
+    
     </div>
   );
 };

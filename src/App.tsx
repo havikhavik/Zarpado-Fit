@@ -12,10 +12,9 @@ import { VirtualTryOn } from "./pages/VirtualTryOn";
 import { Profile } from "./pages/Profile";
 import { Favoritos } from "./pages/Favoritos";
 import { Historial } from "./pages/Historial";
-import { Catalog } from "./pages/Catalogo"; // Corregido de 'Catalog' a 'Catalogo'
+import { Catalog } from "./pages/Catalog";
 import { DetallePrenda } from "./pages/DetallePrenda";
 import { Recommendations } from "./pages/Recommendations";
-import { Routes, Route } from "react-router-dom"; 
 
 // Providers de Contexto
 import { FavoritesProvider } from './context/FavoritesContext';
