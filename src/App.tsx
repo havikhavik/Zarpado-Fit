@@ -12,8 +12,10 @@ import { VirtualTryOn } from "./pages/VirtualTryOn";
 import { Profile } from "./pages/Profile";
 import { Favoritos } from "./pages/Favoritos";
 import { Historial } from "./pages/Historial";
-import { Catalogo } from "./pages/Catalogo"; // Corregido de 'Catalog' a 'Catalogo'
+import { Catalog } from "./pages/Catalogo"; // Corregido de 'Catalog' a 'Catalogo'
 import { DetallePrenda } from "./pages/DetallePrenda";
+import { Recommendations } from "./pages/Recommendations";
+import { Routes, Route } from "react-router-dom"; 
 
 // Providers de Contexto
 import { FavoritesProvider } from './context/FavoritesContext';
@@ -26,7 +28,7 @@ export const App = () => {
     <FavoritesProvider>
       <VirtualTryOnProvider>
         <HistoryProvider>
-          <div className="min-h-screen bg-[#0f172a]">
+          <div className="min-h-screen bg-gray-900">
             <Header />
             <main> {/* Es una buena práctica envolver el contenido principal en <main> */}
               <Routes>
@@ -38,7 +40,8 @@ export const App = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/favoritos" element={<Favoritos />} />
                 <Route path="/historial" element={<Historial />} />
-                <Route path="/catalogo" element={<Catalogo />} />
+                <Route path="/catalogo" element={<Catalog />} />
+                <Route path="/recommendations" element={<Recommendations/>} />
                 {/* Corregida la ruta para que coincida con la navegación del catálogo */}
                 <Route path="/prenda/:id" element={<DetallePrenda />} /> 
               </Routes>
