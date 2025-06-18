@@ -66,7 +66,7 @@ export const Header = () => {
             <NavLink icon={Camera} label="Probador" to="/virtual-try-on" />
             <NavLink icon={Upload} label="Subir Foto" to="/upload-photo" />
             <NavLink icon={User} label="Perfil" to="/profile" />
-            <NavLink icon={Settings} label="Ajustes" to="/ajustes" />
+            <NavLink icon={Settings} label="Ajustes" to="/settings" />
             <NavLink icon={LogIn} label="Iniciar Sesión" to="/login" />
             <NavLink icon={UserPlus} label="Registrarse" to="/register" />
           </div>
@@ -102,7 +102,7 @@ export const Header = () => {
             />
             <NavLink icon={User} label="Perfil" to="/profile" isMobile />
             <NavLink icon={LogIn} label="Iniciar Sesión" to="/login" isMobile />
-            <NavLink icon={Settings} label="Ajustes" to="/ajustes" isMobile /> 
+            <NavLink icon={Settings} label="Ajustes" to="/settings" isMobile /> 
             <NavLink
               icon={UserPlus}
               label="Registrarse"

@@ -11,7 +11,7 @@ const Settings = () => {
   };
 
   const opciones = [
-    { label: 'Perfil', icon: User, to: '/perfil' },
+    { label: 'Perfil', icon: User, to: '/profile' },
     { label: 'Seguridad y acceso a la cuenta', icon: Shield, to: '/seguridad' },
     { label: 'Borrar historial', icon: Trash2, to: '/borrar-historial' },
     { label: 'Preguntas frecuentes', icon: HelpCircle, to: '/faq' },

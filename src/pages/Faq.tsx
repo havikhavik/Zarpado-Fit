@@ -37,7 +37,7 @@ const Faq = () => {
         {/* Botón volver */}
         <div className="mb-6">
           <button
-            onClick={() => navigate('/ajustes')}
+            onClick={() => navigate('/settings')}
             className="text-white hover:text-cyan-400 transition-colors text-lg"
           >
             ← Volver a ajustes
