@@ -32,7 +32,9 @@ export const Profile = () => {
               <h1 className="text-3xl font-bold text-white">Mi Perfil</h1>
               <p className="text-gray-300">Gestiona tu información personal</p>
             </div>
+
           </div>
+        </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             
@@ -106,3 +108,4 @@ export const Profile = () => {
     </div>
   );
 };
+
