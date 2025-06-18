@@ -22,7 +22,7 @@ const Settings = () => {
       {/* HEADER */}
       <div className="flex items-center space-x-4 mb-8">
         <button
-          onClick={() => navigate('/catalogo')}
+          onClick={() => navigate('/Catalog')}
           className="text-white hover:text-purple-400 transition"
           aria-label="Volver al catálogo"
         >

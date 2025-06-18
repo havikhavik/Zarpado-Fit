@@ -64,7 +64,7 @@ const Catalog = () => {
   const cerrarSesion = () => {
     localStorage.removeItem('usuarioActivo');
     setUsuarioLogueado(null);
-    navigate('/iniciar-sesion');
+    navigate('/Login');
   };
 
   const menuItems = usuarioLogueado
