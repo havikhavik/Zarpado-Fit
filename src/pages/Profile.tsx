@@ -1,7 +1,9 @@
 import { User, History, Image, LogOut, MessageCircleQuestion, Heart } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import MiniCarta from "../components/MiniCard"
+import { useAuth } from "../context/AuthContext";
 
+//TODO conectar con la API para obtener el historial real
 const fullHistoryItems = [
   { id: 1, title: 'Camisa de Lino Blanca', date: 'Ayer', image: "camisa" },
   { id: 2, title: 'Pantalón Cargo Negro', date: 'Hace 3 días', image: "" },
@@ -18,6 +20,15 @@ const fullHistoryItems = [
 ];
 
 export const Profile = () => {
+  const navigate = useNavigate();
+  const { setUsuario } = useAuth();
+
+  const handleLogout = () => {
+    localStorage.removeItem("usuarioActivo");
+    setUsuario(null);
+    navigate("/catalog");
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-purple-900 py-12 px-4">
       <div className="max-w-4xl mx-auto">
@@ -86,24 +97,18 @@ export const Profile = () => {
                 </div>
               </NavLink>
 
-              <NavLink to="/logout">
-                <div className="bg-gray-800/50 p-4 rounded-lg hover:bg-gray-700 transition">
-                  <h3 className="text-xl font-semibold text-white mb-4 flex items-center space-x-2 select-none">
-                    <LogOut className="h-5 w-5" />
-                    <span>Cerrar sesión</span>
-                  </h3>
-                </div>
-              </NavLink>
+              <button
+                onClick={handleLogout}
+                className="w-full text-left bg-gray-800/50 p-4 rounded-lg hover:bg-red-600 transition mt-4"
+              >
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center space-x-2 select-none">
+                  <LogOut className="h-5 w-5" />
+                  <span>Cerrar sesión</span>
+                </h3>
+              </button>
             </div>
           </div>
         </div>
-
-
-        
-
-
-
-    
     </div>
   );
 };
